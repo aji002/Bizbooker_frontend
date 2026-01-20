@@ -1,12 +1,92 @@
-# React + Vite
+# BizBooker – Online Appointment Booking System (Frontend)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+BizBooker is a modern online appointment booking web application that allows users to discover businesses, book appointments, manage bookings, and leave reviews.
+This repository contains the frontend of the application built with React.js.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+### 👤 User Features
+- User authentication (Sign up / Login)
+- Browse businesses by category
+- View business details
+- Book appointments using a calendar interface
+- View upcoming & past appointments
+- Rate and review businesses only after appointment completion
+- Bookmark favorite businesses
+- Fully responsive design
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🏢 Business/Admin Features
+- Business profile management
+- View customer bookings
+- Manage appointment availability
+- Dashboard for booking management
+
+---
+
+## 🛠️ Tech Stack
+
+- Frontend: React.js
+- State Management: React Hooks / Context API
+- HTTP Client: Axios
+- Routing: React Router
+- Styling: Tailwind CSS
+
+---
+
+## 📂 Project Structure
+src/
+│── components/ # Reusable UI components
+│── pages/ # Page-level components
+│── services/ # API calls using Axios
+│── context/ # Global state management
+│── routes/ # Application routing
+│── assets/ # Images and static files
+│── utils/ # Helper functions
+│── App.jsx
+│── main.jsx
+
+
+---
+
+## 🔐 Authentication & Authorization
+
+- JWT-based authentication
+- Role-based access control (User / Business / Admin)
+- Protected routes for authorized users
+
+---
+
+## 📅 Appointment Booking Flow
+
+1. User selects a business
+2. Chooses an available date and time slot
+3. Confirms the booking
+4. Appointment status updates
+5. Reviews enabled only after appointment completion
+
+---
+
+## ⭐ Ratings & Reviews
+
+- Only users with completed appointments can submit ratings
+- Star ratings and comments are displayed on the business details page
+- Reviews are fetched dynamically from the backend
+
+---
+
+## ❤️ Bookmark Feature
+
+- Users can bookmark businesses using a heart icon
+- Bookmarked businesses are displayed in a dedicated bookmarks page
+- Bookmarks are stored in the user profile
+
+---
+
+## ⚙️ Installation & Setup
+git clone https://github.com/your-username/bizbooker-frontend.git
+cd bizbooker-frontend
+npm install
+npm run dev
+
